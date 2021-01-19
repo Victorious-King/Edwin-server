@@ -72,6 +72,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 const port = process.env.PORT ;
+console.log("port==================================>",port)
 
 app.listen(port, () => console.log(`Server up and running on port ${port}`));
 module.exports=connection
