@@ -12,7 +12,7 @@ let config= {
     appSecret: process.env.APP_SECRET || "form_wizard_secret",
 
     // Server port
-    port: process.env.SERVER_PORT ||5000,
+    port: process.env.SERVER_PORT ||3000,
 
     // JWT secret
     jwtSecret: process.env.JWT_SECRET || "form_wizard_secret",
