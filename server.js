@@ -24,10 +24,6 @@ const Language=require("./routes/api/Language")
 const Address=require("./routes/api/Address")
 const app = express();
 var cors = require('cors');
-var databaseOptions = require('./config/config');
-var mysql = require('mysql');
-
-const connection = mysql.createConnection(databaseOptions);
 
 app.use(cors())
 app.use(
@@ -75,4 +71,4 @@ const port = process.env.PORT ;
 console.log("port==================================>",port)
 
 app.listen(port, () => console.log(`Server up and running on port ${port}`));
-module.exports=connection
+
