@@ -23,7 +23,7 @@ const ProfessionAspiration=require("./routes/api/ProfessionAspiration")
 const Language=require("./routes/api/Language")
 const Address=require("./routes/api/Address")
 const app = express();
-var cors = require('cors');
+const cors = require('cors');
 
 app.use(cors())
 app.use(
@@ -57,14 +57,20 @@ app.use("/api/address",Address)
 app.use("/api/bankaccount",BankAccount)
 app.use("/api/professionaspiration",ProfessionAspiration)
 
-if (process.env.NODE_ENV === 'production') {
+app.get("/test", (req, res) => {
+    res.json({
+        message: "node server successfully started!!!"
+    });
+})
+
+/*if (process.env.NODE_ENV === 'production') {
 
     app.use(express.static(path.join(__dirname, "client", "build")))
 
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
     });
-}
+}*/
 
 
 const port = process.env.PORT ;
