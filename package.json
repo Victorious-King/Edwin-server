@@ -4,7 +4,7 @@
   "description": "Login/Registration authentication App",
   "main": "server.js",
   "scripts": {
-    "start": "npx nodemon --exec npx babel-node server.js",
+    "start": "node server.js",
     "heroku-postbuild": "npm install && npm run build",
     "server": "npx nodemon --exec npx babel-node server.js",
     "dev": "concurrently \"npm run server\""
@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
     "concurrently": "^5.0.2",
@@ -43,7 +44,7 @@
     "@babel/node": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@supercharge/request-ip": "^1.1.2",
-    "cors": "^2.8.5",
+   
     "multer": "^1.4.2",
     "nodemailer": "^6.4.17",
     "nodemon": "^2.0.2",
