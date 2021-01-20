@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "npm install && npm run build",
+    "heroku-postbuild": "npm install",
     "server": "npx nodemon --exec npx babel-node server.js",
     "dev": "concurrently \"npm run server\""
   },
