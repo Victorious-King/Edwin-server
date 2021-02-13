@@ -1,7 +1,8 @@
 var databaseOptions = {
-    host     : "us-cdbr-east-03.cleardb.com",
-    database : "heroku_6f003d9194eccc5",
-    user     : "b73d565289f16a",
-    password : "fbd80de9"
+    host     : "localhost",
+    user     : "root",
+    password : "",
+    database : "backend",
+    port:   3306
 };
-module.exports = databaseOptions ;
+module.exports = databaseOptions;

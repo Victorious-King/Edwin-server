@@ -74,6 +74,7 @@ app.get("/test", (req, res) => {
 
 
 const port = process.env.PORT ;
+
 console.log("port==================================>",port)
 
 app.listen(port, () => console.log(`Server up and running on port ${port}`));
